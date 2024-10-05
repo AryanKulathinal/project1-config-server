@@ -30,7 +30,7 @@ pipeline {
             steps {
 
                 bat "docker build -t config_image ."
-                bat "docker run -p 8090:8090 -d --name config_container config_image"
+                bat "docker run -p 8088:8088 -d --name config_container config_image"
             }
         }
     }
